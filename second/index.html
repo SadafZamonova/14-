@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> 
+
+    <style>
+.selected{
+    background-color: green;
+}
+
+.selected2{
+    background-color: red;
+}
+    </style>
+</head>
+<body>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4 p-4">
+        <div class="col">
+          <div class="card h-100">
+           
+            <div class="card-body" onclick="select(this)">
+              <h5 class="card-title">HTML</h5>
+              <p class="card-text">указывает браузеру разметку всех объектов на странице. За счет него можно создать: текстовые поля, кнопки, аудио, видео записи и многое другое</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            
+            <div class="card-body" onclick="select(this)">
+              <h5 class="card-title">CSS</h5>
+              <p class="card-text">это код, который вы используете для стилизации вашей веб-страницы</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body" onclick="select2(this)">
+              <h5 class="card-title">JavaScript</h5>
+              <p class="card-text"> это язык программирования, который даёт возможность реализовывать сложное поведение веб-страницы. Каждый раз, когда вы видите веб-страницу, она не только отображает статическое содержимое, но и делает большее - своевременно отображает обновление контента, выводит интерактивные карты, 2D/3D анимацию, прокручивает видео и т.д</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
