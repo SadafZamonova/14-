@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Галерея</title>
 </head>
 <body>
-    
+    <h1>Галерея</h1>
+    <div class="container">
+        <button id="next" onclick="goNext();">next</button>
+        <img class="img" src="/14-/third/котик.jpg">
+    </div>
+     <script>
+         let next=document.getElementById("next");
+
+         function goNext(){
+             document.querySelector(".img").src = "/14-/third/тина.jpg"
+         }
+
+     </script>
 </body>
 </html>
